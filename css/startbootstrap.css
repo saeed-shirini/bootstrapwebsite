@@ -1,0 +1,331 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    line-height: 1.75;
+}
+a{
+    text-decoration: none;
+}
+.container h2{
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.container p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.services,.portfolio,.about,.team,.contact{
+    padding: 6rem 0 ;
+}
+/* navbar styles */
+.navbar ul.navbar-nav li > a:not(.active){
+    color:rgba(255, 255, 255,0.9);
+}
+.navbar ul.navbar-nav li:hover a{
+    color:#ffc800;
+}
+.navbar ul.navbar-nav li > a.active{
+    color:#ffc800;
+}
+
+button.navbar-toggler{
+    font-size: 17px;
+}
+.navbar .navbar-brand img{
+    color:#ffc800 ;
+    width: 150px;
+    height: auto; 
+}
+
+/* end navbar styles */
+
+/* header styles */
+.header{
+    background:url("../images/header-bg.jpg") no-repeat center center scroll; 
+    background-size: cover;
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+
+.header .welcome{
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+}
+.header .title{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+.header a,.modal a.close-project-btn , .contact .form-btn{
+    background-color: #ffc800;
+    padding:1.25rem 2.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left:auto;
+    margin-right: auto;
+    transition: 0.3s;
+    font-weight: 700;
+}
+.header a:hover,.modal a.close-project-btn:hover{
+    background-color:#d9aa00 ;
+}
+/* end header styles */ 
+
+
+/* services styles */
+
+.services .services-info{
+    margin:2rem 0;
+    padding:1rem;
+}
+
+.services .services-info .services-icon{
+    background-color: #ffc800;
+    color:white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 120px;
+    border-radius: 100%;   
+    vertical-align: middle;
+    margin:0 auto;
+}
+
+.services .services-info h3{
+    font-weight: bold;
+}
+.services .services-info p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* portfolio */
+
+.portfolio .portfolio-card h3.card-title{
+    font-weight: bold;
+}
+.portfolio .portfolio-card p.card-des{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.portfolio .portfolio-card .card-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+}
+.portfolio .portfolio-card .card-img .icon{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(255, 200, 0, 0.9) ;
+    opacity: 0;
+    transition: 0.2s;
+}
+.portfolio .portfolio-card .card-img .icon i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+}
+.portfolio .portfolio-card .card-link:hover .icon {
+    opacity: 1;
+}
+
+/* modal styles */
+
+.container-btn-close{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.container-btn-close i{
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    margin:0.5rem;
+    color:rgba(0,0,0,0.6);
+}
+.modal ul li{
+    list-style: none;
+    margin:0 auto;
+    text-align: center;
+}
+.modal .modal-dialog p.modal-description,.modal ul li{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+/* about styles */
+.about .about-img-container{
+    position: relative;
+}
+.about .about-img-container::before{
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top:95px;
+    left: 50%;
+    background-color: #e9ecef;
+    z-index: -1 ;
+}
+.about img.about-img,.about .about-list .text-container{
+    width:90px;
+    height: 90px;
+    border-radius: 100%;
+    border:7px solid #e9ecef;
+}
+.about .about-list .text-container{
+    background-color: #ffc800;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.about .about-list h4{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.7rem;
+    color:white;
+    font-weight: bold;
+}
+.about .about-list-title > *{
+    font-weight: 700;
+}
+.about .about-list-description{
+   font-size: 1.1rem;
+}
+
+/* team style  */
+.team .team-img{
+    width:15rem;
+    height: 15rem;
+    margin: 0 auto;
+}
+.team .team-img img{
+    width:100%;
+    height:100%;
+    border-radius: 100%;
+    border:0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team .team-description .team-description-name{
+    font-weight: bold;
+}
+.team .team-description .team-description-job{
+    font-size: 1.1rem;
+    font-weight: 400;  
+}
+.team-socialmedia a{
+    width:2rem;
+    height: 2rem;
+    border-radius: 100%;
+    padding:0.8rem;
+    margin:0.5rem;
+    background-color: rgba(0,0,0,0.9);
+    color:white;
+}
+
+
+/* contact styles */
+.contact{
+    background:#212529 url("../images/map-image.png") no-repeat center center fixed;
+    background-size:cover;
+}
+
+.contact .right-input div{
+    height:250px;
+}
+.contact .left-input{
+    height: 250px;
+}
+.contact .right-input textarea{
+    height: 100%;
+}
+.contact .left-input div{
+    height: 90px ;
+}
+
+
+
+/* footer styles */
+
+
+
+
+
+/*  media queries */
+
+/* smal screen */
+@media screen and (min-width:576px){
+
+}
+
+
+/* medium screen */
+
+@media screen and (min-width:768px){
+    .header{
+        padding-top:16rem;
+        padding-bottom:13rem;
+    }
+    .about img.about-img,.about .about-list .text-container{
+        width:100px;
+        height: 100px;;
+    }
+    .about .about-list h4{
+        font-size: 0.8rem;
+    }
+    .contact .left-input{
+        height: 300px;
+    }
+    .contact .left-input div{
+        height: 100px ;
+    }
+    
+}
+
+
+/* large screen */
+@media screen and (min-width:992px){
+    .navbar{
+        background-color: transparent !important;
+    }
+    .navbar ul li {
+        margin:0.5rem;
+    }
+    .navbar .navbar-brand img{
+        width: 190px;
+    }
+    .about img.about-img,.about .about-list .text-container{
+        width:170px;
+        height: 170px;
+    }
+    .about .about-list h4{
+        font-size: 1.2rem;
+    }
+}
